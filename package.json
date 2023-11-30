@@ -4,11 +4,12 @@
   "description": "Demo of how jest workers leak promises across runs",
   "main": "index.js",
   "scripts": {
-    "test-jest": "jest -w 1",
-    "test-node": "node --test --test-concurrency 1"
+    "test-jest": "cd jest-tests; npm test",
+    "test-node": "cd node-tests; npm test",
+    "test-bun": "cd jest-tests; bun test"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@jest/test-sequencer": "^29.7.0",
     "jest": "^29.7.0"
