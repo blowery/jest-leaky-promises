@@ -39,7 +39,9 @@ tests with the normal test sequencer, the failure would appear randomly and fail
 or not fail any suites if it was the last suite to run on the affected worker.
 
 ## Other runtimes
-There are also test harnesses that use the new native node test runner, deno's built-in test runner, and bun's jest-compatible test runner. You can try these with `npm run test-node`, `npm run test-deno` and `npm run test-bun`. For Deno and Bun, you'll need to have Deno and Bun installed for the tests to run.
+There are other test runners that feature test-suite level isolation: Node's new native test runner, Deno's native test runner, and Bun's native test runner. 
+
+You can try these with `npm run test-node`, `npm run test-deno` and `npm run test-bun`. For Deno and Bun, you'll need to have Deno and Bun installed for the tests to run.
 
 ### Node Native
 Node catches the leaky promise and fails the test that leaked.
