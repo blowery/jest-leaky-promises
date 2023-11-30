@@ -6,7 +6,8 @@
   "scripts": {
     "test-jest": "cd jest-tests; npm test",
     "test-node": "cd node-tests; npm test",
-    "test-bun": "cd jest-tests; bun test"
+    "test-bun": "cd jest-tests; bun test",
+    "test-deno": "cd deno-tests; deno test"
   },
   "author": "",
   "license": "MIT",
