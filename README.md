@@ -32,3 +32,8 @@ Snapshots:   0 total
 Time:        2.187 s
 Ran all test suites.
 ```
+
+We run `jest` with `-w 1` and a custom test sequencer to guarantee that the worker is reused 
+and that the delayed promise rejection happens in the first suite. In a normal suite of 
+tests with the normal test sequencer, the failure would appear randomly and fail a random suite, 
+or not fail any suites if it was the last suite to run on the affected worker.
